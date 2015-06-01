@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ins_ViewGroup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/titlebar" >
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_height="31dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/nav_back" >
+        </Button>
+
+        <TextView
+            android:id="@+id/txtDate_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="           "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="View Insurance"
+            android:textAppearance="?android:attr/textAppearanceLarge" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" >
+
+        <TextView
+            android:id="@+id/medication9what"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="18dp"
+            android:text="Member Name :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/medication9what"
+            android:layout_marginLeft="19dp"
+            android:layout_toRightOf="@+id/medication9what"
+            android:text="                   "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/medication9what"
+            android:layout_below="@+id/medication9what"
+            android:layout_marginTop="14dp"
+            android:text="Insurance Company Name :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView01"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/TextView01"
+            android:layout_marginLeft="36dp"
+            android:text="             "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextView06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView01"
+            android:layout_below="@+id/txtCompany"
+            android:text="Address :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextView07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView06"
+            android:layout_below="@+id/TextView06"
+            android:text="City :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/medication1__name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView07"
+            android:layout_below="@+id/TextView07"
+            android:text="State :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextView09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/medication1__name"
+            android:layout_below="@+id/medication1__name"
+            android:text="ZIP Code :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView09"
+            android:layout_below="@+id/TextView09"
+            android:layout_marginTop="18dp"
+            android:text="Phone/Office :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/medication9when"
+            android:layout_below="@+id/medication9when"
+            android:layout_marginTop="21dp"
+            android:text="Member ID :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/medication8dosage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView12"
+            android:layout_below="@+id/TextView12"
+            android:layout_marginTop="16dp"
+            android:text="Group # :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/medication1dosage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView12"
+            android:layout_below="@+id/TextView12"
+            android:layout_marginTop="53dp"
+            android:text="BIN # :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtMember"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtCompany"
+            android:text="               "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/medication1capsule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtMember"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/TextView06"
+            android:text="               "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/editMedicationCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/medication1capsule"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/medication1capsule"
+            android:text="               "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/editOtherAllergies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editMedicationCount"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editMedicationCount"
+            android:text="               "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/editMedicineAllergies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/TextView10"
+            android:layout_toLeftOf="@+id/btnPhone"
+            android:layout_toRightOf="@+id/medication9what"
+            android:text="               "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtPolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editMedicineAllergies"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/medication9when"
+            android:text="               "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtPolicy"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/TextView12"
+            android:text="               "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtID"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/medication8dosage"
+            android:text="               "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtBin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtID"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/medication1dosage"
+            android:text="               "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/txtBin"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/TextView09"
+            android:background="@drawable/button"
+            android:text="Home"
+            android:textColor="@color/white" >
+        </Button>
+
+        <TextView
+            android:id="@+id/medication9when"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView10"
+            android:layout_below="@+id/TextView10"
+            android:text="Policy Number :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/btnPhone"
+            android:layout_marginTop="-10dp"
+	        android:layout_width="32dp"
+	        android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/editMedicineAllergies"
+            android:layout_marginRight="26dp"
+            android:background="@drawable/tel" >
+        </Button>
+    </RelativeLayout>
+
+</LinearLayout>

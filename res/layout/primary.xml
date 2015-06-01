@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/primay_ViewGroup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout02"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/titlebar" >
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_height="31dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/nav_back" >
+        </Button>
+
+        <TextView
+            android:id="@+id/txtDate_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="          "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Primary Doctor"
+            android:textAppearance="?android:attr/textAppearanceLarge" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" >
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="29dp"
+            android:text="Doctors Name :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtDoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/TextView04"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextView04"
+            android:text="                               "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="13dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView04"
+            android:layout_below="@+id/TextView04"
+            android:layout_marginTop="16dp"
+            android:text="Address :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextView06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView04"
+            android:layout_below="@+id/TextView04"
+            android:layout_marginTop="44dp"
+            android:text="City :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextView07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView06"
+            android:layout_below="@+id/TextView06"
+            android:layout_marginTop="14dp"
+            android:text="State :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextView08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView07"
+            android:layout_below="@+id/TextView07"
+            android:layout_marginTop="14dp"
+            android:text="ZIP Code :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextView09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView08"
+            android:layout_centerVertical="true"
+            android:text="Phone/Office :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView09"
+            android:layout_below="@+id/TextView09"
+            android:layout_marginTop="14dp"
+            android:text="Mobile # :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView10"
+            android:layout_below="@+id/TextView10"
+            android:layout_marginTop="15dp"
+            android:text="Email :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtAddress"
+            android:layout_alignTop="@+id/txtAddress"
+            android:text="                               "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtDoctor"
+            android:layout_alignTop="@+id/TextView05"
+            android:text="                               "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="13dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView12"
+            android:layout_alignTop="@+id/TextView06"
+            android:text="                               "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView12"
+            android:layout_alignTop="@+id/TextView06"
+            android:text="                               "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="13dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView12"
+            android:layout_alignTop="@+id/TextView07"
+            android:text="                               "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="13dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtZip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtState"
+            android:layout_alignTop="@+id/TextView08"
+            android:layout_toLeftOf="@+id/btnPhone"
+            android:text="                               "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="13dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/TextView09"
+            android:layout_toLeftOf="@+id/btnMobile"
+            android:layout_toRightOf="@+id/TextView04"
+            android:text="                               "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="13dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtPhone"
+            android:layout_alignRight="@+id/txtPhone"
+            android:layout_alignTop="@+id/TextView10"
+            android:text="                               "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="13dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtMobile"
+            android:layout_alignTop="@+id/TextView02"
+            android:layout_toLeftOf="@+id/btnPhone"
+            android:text="                               "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="13dp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/txtEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/button"
+            android:text="Home"
+            android:textColor="@color/white" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnMobile"
+            android:layout_marginTop="-8dp"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+            android:layout_alignTop="@+id/txtMobile"
+            android:layout_toRightOf="@+id/txtZip"
+            android:background="@drawable/tel" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnPhone"
+            android:layout_marginTop="-8dp"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/TextView13"
+            android:background="@drawable/tel" >
+        </Button>
+    </RelativeLayout>
+
+</LinearLayout>

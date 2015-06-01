@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:weightSum="1">
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:background="@drawable/cell_back1" android:id="@+id/relativeLayout1">
+        <TextView android:id="@+id/medication1what" android:layout_alignParentTop="true" android:layout_marginLeft="17dp" android:layout_width="wrap_content" android:layout_alignParentLeft="true" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:text="TextView"></TextView>
+        <TextView android:id="@+id/txtAddress" android:textSize="15dp" android:layout_marginLeft="22dp" android:layout_width="wrap_content" android:layout_below="@+id/medication1what" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_alignLeft="@+id/medication1what" android:layout_height="wrap_content" android:text="TextView"></TextView>
+        <TextView android:id="@+id/editMedicineAllergies" android:textSize="15dp" android:layout_width="wrap_content" android:layout_below="@+id/txtAddress" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_alignLeft="@+id/txtAddress" android:layout_height="wrap_content" android:text="TextView"></TextView>
+    </RelativeLayout>
+
+</LinearLayout>

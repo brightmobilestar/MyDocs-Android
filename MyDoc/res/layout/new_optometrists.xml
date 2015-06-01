@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/opt_new_ViewGroup" android:orientation="vertical"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+	<RelativeLayout android:layout_width="match_parent"
+		android:background="@drawable/titlebar" android:id="@+id/RelativeLayout01"
+		android:layout_height="44dp">
+		<Button android:layout_alignParentLeft="true"
+			android:layout_width="30dp" android:layout_height="31dp" android:id="@+id/btnBack"
+			android:layout_centerVertical="true" android:layout_marginLeft="17dp"
+			android:background="@drawable/nav_back"></Button>
+		<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content" android:layout_alignParentRight="true"
+			android:textSize="15dp" android:id="@+id/txtDate_title"
+			android:layout_height="wrap_content" android:layout_centerVertical="true"
+			android:text="          "></TextView>
+		<TextView android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content" android:id="@+id/txtTitle"
+			android:layout_height="wrap_content" android:layout_centerVertical="true"
+			android:layout_centerHorizontal="true" android:text="Optometrists"></TextView>
+	</RelativeLayout>
+	<ScrollView android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:id="@+id/scrollView1">
+		<LinearLayout android:id="@+id/linearLayout1"
+			android:layout_width="match_parent" android:layout_height="match_parent"
+			android:orientation="vertical">
+			<RelativeLayout android:layout_width="match_parent"
+				android:background="@drawable/background" android:id="@+id/relativeLayout1"
+				android:layout_height="544dp">
+				<TextView android:layout_alignParentLeft="true"
+					android:layout_marginTop="20dp" android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="Doctors Name :" android:layout_width="wrap_content"
+					android:textSize="15dp" android:id="@+id/medication8what"
+					android:layout_height="wrap_content" android:layout_alignParentTop="true"
+					android:layout_marginLeft="19dp"></TextView>
+				<EditText android:layout_toRightOf="@+id/medication8what"
+					android:layout_width="wrap_content" android:id="@+id/medication1what"
+					android:layout_alignParentRight="true" android:layout_height="35dp"
+					android:layout_alignTop="@+id/medication8what" android:textSize="13dp">
+					<requestFocus></requestFocus>
+				</EditText>
+				<EditText android:layout_width="wrap_content" android:id="@+id/medication1capsule"
+					android:layout_alignParentRight="true" android:layout_height="35dp"
+					android:layout_below="@+id/txtAddress" android:layout_alignLeft="@+id/txtAddress"
+					android:textSize="13dp"></EditText>
+				<EditText android:layout_width="wrap_content" android:id="@+id/editMedicationCount"
+					android:layout_alignParentRight="true" android:layout_height="35dp"
+					android:layout_below="@+id/medication1capsule" android:layout_alignLeft="@+id/medication1capsule"
+					android:textSize="13dp"></EditText>
+				<EditText android:layout_width="wrap_content" android:id="@+id/editOtherAllergies"
+					android:layout_alignParentRight="true" android:layout_height="35dp"
+					android:layout_alignTop="@+id/medication1dosage" android:layout_alignLeft="@+id/editMedicationCount"
+					android:textSize="13dp"></EditText>
+
+				<EditText
+				    android:id="@+id/editMedicineAllergies"
+				    android:layout_width="wrap_content"
+				    android:layout_height="35dp"
+				    android:layout_alignLeft="@+id/editOtherAllergies"
+				    android:layout_alignParentRight="true"
+				    android:layout_alignTop="@+id/TextView06"
+				    android:textSize="13dp" >
+</EditText>
+
+				<EditText
+				    android:id="@+id/editBirthday"
+				    android:layout_width="wrap_content"
+				    android:layout_height="35dp"
+				    android:layout_alignLeft="@+id/editMedicineAllergies"
+				    android:layout_alignParentRight="true"
+				    android:layout_alignTop="@+id/TextView07"
+				    android:textSize="13dp" >
+</EditText>
+				<EditText android:layout_width="wrap_content" android:id="@+id/txtEmail"
+					android:layout_alignParentRight="true" android:layout_height="35dp"
+					android:layout_below="@+id/editBirthday" android:layout_alignLeft="@+id/editBirthday"
+					android:textSize="13dp"></EditText>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="City:" android:layout_width="wrap_content"
+					android:textSize="15dp" android:id="@+id/medication9what"
+					android:layout_height="wrap_content" android:layout_alignTop="@+id/medication1capsule"
+					android:layout_alignLeft="@+id/medication9name"></TextView>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="State:" android:layout_width="wrap_content"
+					android:textSize="15dp" android:id="@+id/TextView04"
+					android:layout_height="wrap_content" android:layout_alignTop="@+id/editMedicationCount"
+					android:layout_alignLeft="@+id/medication9what"></TextView>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="ZIP :" android:layout_width="wrap_content"
+					android:textSize="15dp" android:id="@+id/medication1dosage"
+					android:layout_height="wrap_content" android:layout_below="@+id/editMedicationCount"
+					android:layout_alignLeft="@+id/TextView04"></TextView>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="Mobile #" android:layout_width="wrap_content"
+					android:textSize="15dp" android:id="@+id/TextView07"
+					android:layout_height="wrap_content" android:layout_below="@+id/editMedicineAllergies"
+					android:layout_alignLeft="@+id/TextView06"></TextView>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="Email" android:layout_width="wrap_content"
+					android:textSize="15dp" android:id="@+id/medication1__name"
+					android:layout_height="wrap_content" android:layout_alignTop="@+id/txtEmail"
+					android:layout_alignLeft="@+id/medication8what"></TextView>
+				<EditText android:layout_width="wrap_content" android:id="@+id/txtAddress"
+					android:layout_height="35dp" android:layout_below="@+id/medication1what"
+					android:layout_toRightOf="@+id/medication8what"
+					android:layout_alignParentRight="true" android:textSize="13dp">
+					
+				</EditText>
+				<TextView android:id="@+id/TextView06" android:textSize="15dp"
+					android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_height="wrap_content" android:text="Phone :"
+					android:layout_below="@+id/editOtherAllergies" android:layout_alignLeft="@+id/medication1__name"></TextView>
+				<Button android:text="Home" android:layout_width="100dp"
+					android:id="@+id/btnHome" android:textColor="@color/white"
+					android:layout_height="30dp" android:background="@drawable/button"
+					android:layout_below="@+id/txtEmail"
+					android:layout_alignParentRight="true" android:layout_marginRight="33dp"
+					android:layout_marginTop="33dp"></Button>
+				<Button android:text="Save" android:layout_width="100dp"
+					android:id="@+id/btnSave" android:textColor="@color/white"
+					android:layout_height="30dp" android:background="@drawable/button"
+					android:layout_alignTop="@+id/btnHome" android:layout_toLeftOf="@+id/txtEmail"></Button>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:text="Address:" android:id="@+id/medication9name" android:layout_width="wrap_content" android:textSize="15dp" android:layout_height="wrap_content" android:layout_alignTop="@+id/txtAddress" android:layout_alignLeft="@+id/btnSave"></TextView>
+			</RelativeLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/pha_new_ViewGroup" android:orientation="vertical"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+	<RelativeLayout android:layout_height="44dp"
+		android:layout_width="match_parent" android:background="@drawable/titlebar"
+		android:id="@+id/RelativeLayout01">
+		<Button android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true" android:layout_width="30dp"
+			android:layout_marginLeft="17dp" android:background="@drawable/nav_back"
+			android:id="@+id/btnBack" android:layout_height="31dp"></Button>
+		<TextView android:layout_alignParentRight="true"
+			android:layout_centerVertical="true" android:textSize="15dp"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content" android:id="@+id/txtDate_title"
+			android:layout_height="wrap_content" android:text="          "></TextView>
+		<TextView android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content" android:id="@+id/txtTitle"
+			android:layout_height="wrap_content" android:layout_centerVertical="true"
+			android:layout_centerHorizontal="true" android:text="Pharmacy"></TextView>
+	</RelativeLayout>
+	<ScrollView android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:id="@+id/scrollView1">
+		<LinearLayout android:id="@+id/linearLayout1"
+			android:layout_width="match_parent" android:layout_height="match_parent"
+			android:orientation="vertical">
+			<RelativeLayout android:id="@+id/RelativeLayout02" android:layout_width="match_parent" android:layout_height="544dp" android:background="@drawable/background">
+				<TextView android:layout_alignParentLeft="true" android:textAppearance="?android:attr/textAppearanceMedium" android:text=" Pharmacy Name :" android:layout_alignParentTop="true" android:layout_marginLeft="19dp" android:id="@+id/medication8what" android:layout_marginTop="20dp" android:layout_width="wrap_content" android:textSize="15dp" android:layout_height="wrap_content"></TextView>
+				<EditText android:textSize="13dp" android:id="@+id/txtPharmacy" android:layout_alignParentRight="true" android:layout_toRightOf="@+id/medication8what" android:layout_width="wrap_content" android:layout_alignTop="@+id/medication8what" android:layout_height="35dp">
+					<requestFocus></requestFocus>
+				</EditText>
+				<EditText android:textSize="13dp" android:layout_alignLeft="@+id/txtAddress" android:id="@+id/medication1capsule" android:layout_alignParentRight="true" android:layout_below="@+id/txtAddress" android:layout_width="wrap_content" android:layout_height="35dp"></EditText>
+				<EditText android:textSize="13dp" android:layout_alignLeft="@+id/medication1capsule" android:id="@+id/editMedicationCount" android:layout_alignParentRight="true" android:layout_below="@+id/medication1capsule" android:layout_width="wrap_content" android:layout_height="35dp"></EditText>
+				<EditText android:textSize="13dp" android:layout_alignLeft="@+id/editMedicationCount" android:id="@+id/editOtherAllergies" android:layout_alignParentRight="true" android:layout_width="wrap_content" android:layout_alignTop="@+id/medication1dosage" android:layout_height="35dp"></EditText>
+
+				<EditText
+				    android:id="@+id/editMedicineAllergies"
+				    android:layout_width="wrap_content"
+				    android:layout_height="35dp"
+				    android:layout_alignLeft="@+id/editOtherAllergies"
+				    android:layout_alignParentRight="true"
+				    android:layout_alignTop="@+id/TextView06"
+				    android:textSize="13dp" >
+</EditText>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:text="City:" android:id="@+id/medication9what" android:layout_alignLeft="@+id/medication9name" android:layout_width="wrap_content" android:layout_alignTop="@+id/medication1capsule" android:textSize="15dp" android:layout_height="wrap_content"></TextView>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:text="State:" android:id="@+id/TextView04" android:layout_alignLeft="@+id/medication9what" android:layout_width="wrap_content" android:layout_alignTop="@+id/editMedicationCount" android:textSize="15dp" android:layout_height="wrap_content"></TextView>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:text="ZIP :" android:id="@+id/medication1dosage" android:layout_alignLeft="@+id/TextView04" android:layout_below="@+id/editMedicationCount" android:layout_width="wrap_content" android:textSize="15dp" android:layout_height="wrap_content"></TextView>
+				<EditText android:textSize="13dp" android:id="@+id/txtAddress" android:layout_alignParentRight="true" android:layout_toRightOf="@+id/medication8what" android:layout_below="@+id/txtPharmacy" android:layout_width="wrap_content" android:layout_height="35dp"></EditText>
+				<Button android:textColor="@color/white" android:id="@+id/btnHome" android:layout_marginRight="26dp" android:background="@drawable/button" android:text="Home" android:layout_marginTop="30dp" android:layout_alignParentRight="true" android:layout_below="@+id/editMedicineAllergies" android:layout_width="100dp" android:layout_height="30dp"></Button>
+				<Button android:textColor="@color/white" android:id="@+id/btnSave" android:background="@drawable/button" android:text="Save" android:layout_marginTop="27dp" android:layout_below="@+id/editMedicineAllergies" android:layout_width="100dp" android:layout_alignRight="@+id/medication8what" android:layout_height="30dp"></Button>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:text="Address:" android:id="@+id/medication9name" android:layout_width="wrap_content" android:textSize="15dp" android:layout_height="wrap_content" android:layout_below="@+id/txtPharmacy" android:layout_alignLeft="@+id/btnSave"></TextView>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:text="Phone" android:id="@+id/TextView06" android:layout_width="wrap_content" android:textSize="15dp" android:layout_height="wrap_content" android:layout_below="@+id/editOtherAllergies" android:layout_alignRight="@+id/TextView04" android:layout_marginTop="23dp"></TextView>
+			</RelativeLayout>
+			
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

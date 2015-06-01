@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/titlebar1"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/editProfile"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="4dip"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/edit" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" >
+
+        <Button
+            android:id="@+id/btnPrimary"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/btnInsurance"
+            android:layout_below="@+id/btnInsurance"
+            android:background="@drawable/primary" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnSpecialist"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/btnPrimary"
+            android:layout_below="@+id/btnPrimary"
+            android:background="@drawable/specialist" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnDentist"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/btnSpecialist"
+            android:layout_below="@+id/btnSpecialist"
+            android:background="@drawable/dentist" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnOptometrist"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/btnDentist"
+            android:layout_below="@+id/btnDentist"
+            android:background="@drawable/optometrist" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnPharmacy"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/btnOptometrist"
+            android:layout_below="@+id/btnOptometrist"
+            android:background="@drawable/pharmacy" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnHospital"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/btnPharmacy"
+            android:layout_below="@+id/btnPharmacy"
+            android:background="@drawable/hospital" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnAppointments"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/btnHospital"
+            android:layout_below="@+id/btnHospital"
+            android:background="@drawable/appointments" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnInsurance"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/insurance" >
+        </Button>
+    </RelativeLayout>
+
+</LinearLayout>

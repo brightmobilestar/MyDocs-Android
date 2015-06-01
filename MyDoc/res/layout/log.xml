@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/primay_new_ViewGroup"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/titlebar" >
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="30dp"
+                android:layout_height="31dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:background="@drawable/nav_back" >
+            </Button>
+
+            <TextView
+                android:id="@+id/txtDate_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="         "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="15dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="View Log"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="1226dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                
+                 >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" 
+                    android:layout_marginTop="10dp"
+                	android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.81"
+                        android:gravity="center_vertical"
+                        android:text="Fullname :"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/editFullname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="0.57"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" 
+                    android:layout_marginTop="10dp"
+                	android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/TextView07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.84"
+                        android:text="Birthday :"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/editBirthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="0.57"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="phone"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" >
+
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/TextView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.79"
+                        android:gravity="center_vertical"
+                        android:text="Age"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/btnMedicineAllergies"
+                        android:layout_width="172dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.37"
+                        android:background="@drawable/transparent"
+                        android:gravity="left|fill_vertical"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" 
+                    android:layout_marginTop="10dp"
+                	android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/TextView06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.81"
+                        android:gravity="center_vertical"
+                        android:text="Last Updated :"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/editMedicineAllergies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="0.57"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="phone"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" 
+                    android:layout_marginTop="10dp"
+                	android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/TextView04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.52"
+                        android:gravity="center_vertical"
+                        android:text="Current Medications :"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/editMedicationCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="3.40"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" 
+                    android:layout_marginTop="10dp"
+                	android:layout_marginBottom="10dp">
+
+                    <Button
+                        android:id="@+id/Button09"
+                        android:layout_width="fill_parent"
+                        android:layout_height="3dp"
+                        android:text="Medicine Allergies" />
+
+                    <LinearLayout
+                        android:id="@+id/linearmedication1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout01"
+                            android:layout_width="143dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/medication1name"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.80"
+                                android:gravity="center"
+                                android:text="1st Medication"
+                                android:textAlignment="center"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="201dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1.80"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/medication1__name"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:text="medication1name"
+                                android:textColor="@color/black"
+                                android:visibility="gone"
+                                android:textStyle="bold"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication1dosage"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication1when"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication1capsule"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication1what"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/Button03"
+                        android:layout_width="fill_parent"
+                        android:layout_height="3dp"
+                        android:text="Medicine Allergies" />
+
+                    <LinearLayout
+                        android:id="@+id/linearmedication2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout17"
+                            android:layout_width="143dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/medication2name"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.80"
+                                android:gravity="center"
+                                android:text="2nd Medication"
+                                android:textAlignment="center"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="201dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1.80"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/medication2__name"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:visibility="gone"
+                                android:textStyle="bold"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication2dosage"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication2when"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication2capsule"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication2what"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/Button01"
+                        android:layout_width="fill_parent"
+                        android:layout_height="3dp"
+                        android:text="Medicine Allergies" />
+
+                    <LinearLayout
+                        android:id="@+id/linearmedication3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout15"
+                            android:layout_width="143dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/medication3name"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.80"
+                                android:gravity="center"
+                                android:text="3rd Medication"
+                                android:textAlignment="center"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="201dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1.80"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/medication3__name"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:visibility="gone"
+                                android:textStyle="bold"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication3dosage"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication3when"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication3capsule"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication3what"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/Button02"
+                        android:layout_width="fill_parent"
+                        android:layout_height="3dp"
+                        android:text="Medicine Allergies" />
+
+                    <LinearLayout
+                        android:id="@+id/linearmedication4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout13"
+                            android:layout_width="143dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/medication4name"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.80"
+                                android:gravity="center"
+                                android:text="4th Medication"
+                                android:textAlignment="center"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="201dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1.80"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/medication4__name"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:visibility="gone"
+                                android:textStyle="bold"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication4dosage"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication4when"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication4capsule"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication4what"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/Button04"
+                        android:layout_width="fill_parent"
+                        android:layout_height="3dp"
+                        android:text="Medicine Allergies" />
+
+                    <LinearLayout
+                        android:id="@+id/linearmedication5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout11"
+                            android:layout_width="143dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/medication5name"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.80"
+                                android:gravity="center"
+                                android:text="5th Medication"
+                                android:textAlignment="center"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="201dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1.80"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/medication5__name"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:visibility="gone"
+                                android:textStyle="bold"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication5dosage"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication5when"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication5capsule"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication5what"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/Button05"
+                        android:layout_width="fill_parent"
+                        android:layout_height="3dp"
+                        android:text="Medicine Allergies" />
+
+                    <LinearLayout
+                        android:id="@+id/linearmedication6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout09"
+                            android:layout_width="143dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/medication6name"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.80"
+                                android:gravity="center"
+                                android:text="6th Medication"
+                                android:textAlignment="center"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="201dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1.80"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/medication6__name"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:visibility="gone"
+                                android:textStyle="bold"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication6dosage"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication6when"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication6capsule"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication6what"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/Button06"
+                        android:layout_width="fill_parent"
+                        android:layout_height="3dp"
+                        android:text="Medicine Allergies" />
+
+                    <LinearLayout
+                        android:id="@+id/linearmedication7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout07"
+                            android:layout_width="143dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/medication7name"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.80"
+                                android:gravity="center"
+                                android:text="7th Medication"
+                                android:textAlignment="center"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="201dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1.80"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/medication7__name"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:visibility="gone"
+                                android:textStyle="bold"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication7dosage"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication7when"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication7capsule"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication7what"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/Button07"
+                        android:layout_width="fill_parent"
+                        android:layout_height="3dp"
+                        android:text="Medicine Allergies" />
+
+                    <LinearLayout
+                        android:id="@+id/linearmedication8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout05"
+                            android:layout_width="143dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/medication8name"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.80"
+                                android:gravity="center"
+                                android:text="8th Medication"
+                                android:textAlignment="center"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="201dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1.80"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/medication8__name"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:visibility="gone"
+                                android:textStyle="bold"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication8dosage"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication8when"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication8capsule"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication8what"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/Button08"
+                        android:layout_width="fill_parent"
+                        android:layout_height="3dp"
+                        android:text="Medicine Allergies" />
+
+                    <LinearLayout
+                        android:id="@+id/linearmedication9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout03"
+                            android:layout_width="143dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/medication9name"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.80"
+                                android:gravity="center"
+                                android:text="9th Medication"
+                                android:textAlignment="center"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="201dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1.80"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/medication9__name"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:visibility="gone"
+                                android:textStyle="bold"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication9dosage"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication9when"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication9capsule"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/medication9what"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:ems="10"
+                                android:textColor="@color/black"
+                                android:textSize="13dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+                
+                
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/ins_new_ViewGroup" android:orientation="vertical"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+	<RelativeLayout android:layout_width="match_parent"
+		android:background="@drawable/titlebar" android:id="@+id/RelativeLayout01"
+		android:layout_height="44dp">
+		<Button android:layout_alignParentLeft="true"
+			android:layout_width="30dp" android:layout_height="31dp" android:id="@+id/btnBack"
+			android:layout_centerVertical="true" android:layout_marginLeft="17dp"
+			android:background="@drawable/nav_back"></Button>
+		<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content" android:layout_alignParentRight="true"
+			android:textSize="15dp" android:id="@+id/txtDate_title"
+			android:layout_height="wrap_content" android:layout_centerVertical="true"
+			android:text="                "></TextView>
+		<TextView android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content" android:id="@+id/txtTitle"
+			android:layout_height="wrap_content" android:layout_centerVertical="true"
+			android:layout_centerHorizontal="true" android:clickable="false"
+			android:text="Insurance"></TextView>
+	</RelativeLayout>
+	<ScrollView android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:id="@+id/scrollView1">
+		<LinearLayout android:id="@+id/linearLayout1"
+			android:layout_width="match_parent" android:layout_height="match_parent"
+			android:orientation="vertical">
+			<RelativeLayout android:layout_width="match_parent"
+				android:background="@drawable/background" android:id="@+id/relativeLayout1"
+				android:layout_height="544dp">
+				<EditText android:layout_toRightOf="@+id/TextView14"
+					android:layout_width="wrap_content" android:id="@+id/txtMember"
+					android:layout_alignParentRight="true" android:layout_height="35dp"
+					android:layout_alignTop="@+id/TextView14" android:textSize="13dp">
+					<requestFocus></requestFocus>
+				</EditText>
+				<EditText android:layout_width="wrap_content" android:id="@+id/txtCompany"
+					android:layout_alignParentRight="true" android:layout_height="35dp"
+					android:layout_below="@+id/TextView01" android:textSize="13dp"
+					android:layout_alignLeft="@+id/txtAddress"></EditText>
+				<EditText android:layout_width="wrap_content" android:id="@+id/txtAddress"
+					android:layout_alignParentRight="true" android:layout_height="35dp"
+					android:layout_below="@+id/txtCompany" android:layout_alignLeft="@+id/txtMember"
+					android:textSize="13dp"></EditText>
+				<EditText android:layout_width="wrap_content" android:id="@+id/txtCity"
+					android:layout_alignParentRight="true" android:layout_height="35dp"
+					android:layout_below="@+id/txtAddress" android:layout_alignLeft="@+id/txtAddress"
+					android:textSize="13dp"></EditText>
+				<EditText android:layout_width="wrap_content" android:id="@+id/txtState"
+					android:layout_alignParentRight="true" android:layout_height="35dp"
+					android:layout_below="@+id/txtCity" android:layout_alignLeft="@+id/txtCity"
+					android:textSize="13dp"></EditText>
+				<EditText android:layout_width="wrap_content" android:id="@+id/txtZip"
+					android:layout_alignParentRight="true" android:layout_height="35dp"
+					android:layout_alignTop="@+id/TextView05" android:layout_alignLeft="@+id/txtState"
+					android:textSize="13dp"></EditText>
+
+				<EditText
+				    android:id="@+id/txtPhone"
+				    android:layout_width="wrap_content"
+				    android:layout_height="35dp"
+				    android:layout_alignLeft="@+id/txtZip"
+				    android:layout_alignParentRight="true"
+				    android:layout_alignTop="@+id/TextView06"
+				    android:inputType="phone"
+				    android:textSize="13dp" >
+</EditText>
+				<EditText android:layout_width="wrap_content" android:id="@+id/txtPolicy"
+					android:layout_alignParentRight="true" android:layout_height="35dp"
+					android:layout_alignTop="@+id/TextView07" android:layout_alignLeft="@+id/txtPhone"
+					android:textSize="13dp"></EditText>
+				<EditText android:layout_width="wrap_content" android:id="@+id/txtID"
+					android:layout_alignParentRight="true" android:layout_height="35dp"
+					android:layout_below="@+id/txtPolicy" android:layout_alignLeft="@+id/txtPolicy"
+					android:textSize="13dp"></EditText>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="City:" android:layout_width="wrap_content"
+					android:textSize="15dp" android:id="@+id/TextView03"
+					android:layout_height="wrap_content" android:layout_alignTop="@+id/txtCity"
+					android:layout_alignLeft="@+id/TextView02"></TextView>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="State:" android:layout_width="wrap_content"
+					android:textSize="15dp" android:id="@+id/TextView04"
+					android:layout_height="wrap_content" android:layout_alignTop="@+id/txtState"
+					android:layout_alignLeft="@+id/TextView03"></TextView>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="ZIP :" android:layout_width="wrap_content"
+					android:textSize="15dp" android:id="@+id/TextView05"
+					android:layout_height="wrap_content" android:layout_below="@+id/txtState"
+					android:layout_alignLeft="@+id/TextView04"></TextView>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content" android:textSize="15dp"
+					android:id="@+id/TextView07" android:layout_height="wrap_content"
+					android:layout_below="@+id/txtPhone" android:layout_alignLeft="@+id/TextView06"
+					android:text="Policy Number"></TextView>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content" android:textSize="15dp"
+					android:id="@+id/TextView08" android:layout_height="wrap_content"
+					android:layout_alignTop="@+id/txtID" android:layout_alignLeft="@+id/TextView14"
+					android:text="Member ID"></TextView>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="Phone :" android:layout_width="wrap_content"
+					android:textSize="15dp" android:id="@+id/TextView06"
+					android:layout_height="wrap_content" android:layout_below="@+id/txtZip"
+					android:layout_alignLeft="@+id/TextView08"></TextView>
+				<EditText android:layout_width="wrap_content" android:id="@+id/txtGroup"
+					android:layout_height="35dp" android:layout_below="@+id/txtID"
+					android:layout_alignLeft="@+id/txtID"
+					android:layout_alignParentRight="true" android:textSize="13dp"></EditText>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="Member Name :" android:layout_width="wrap_content"
+					android:textSize="15dp" android:id="@+id/TextView14"
+					android:layout_height="wrap_content" android:layout_alignParentTop="true"
+					android:layout_alignParentLeft="true" android:layout_marginLeft="20dp"></TextView>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content" android:textSize="15dp"
+					android:id="@+id/TextView09" android:layout_height="wrap_content"
+					android:layout_alignTop="@+id/txtGroup" android:layout_alignLeft="@+id/TextView08"
+					android:text="Group #"></TextView>
+				<EditText android:layout_width="wrap_content" android:id="@+id/txtBin"
+					android:layout_height="35dp" android:layout_below="@+id/txtGroup"
+					android:layout_alignLeft="@+id/txtGroup"
+					android:layout_alignParentRight="true" android:textSize="13dp"></EditText>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content" android:textSize="15dp"
+					android:id="@+id/TextView10" android:layout_height="wrap_content"
+					android:layout_alignTop="@+id/txtBin" android:layout_alignLeft="@+id/TextView09"
+					android:text="BIN #"></TextView>
+				<Button android:text="Save" android:layout_width="100dp"
+					android:id="@+id/btnSave" android:textColor="@color/white"
+					android:layout_height="30dp" android:background="@drawable/button"
+					android:layout_alignTop="@+id/btnHome" android:layout_alignLeft="@+id/TextView10"></Button>
+				<Button android:text="Home" android:layout_width="100dp"
+					android:id="@+id/btnHome" android:textColor="@color/white"
+					android:layout_height="30dp" android:background="@drawable/button"
+					android:layout_below="@+id/txtBin" android:layout_alignParentRight="true"
+					android:layout_marginRight="38dp"></Button>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="Insurance Company Name :" android:id="@+id/TextView01"
+					android:layout_width="wrap_content" android:textSize="15dp"
+					android:layout_height="wrap_content" android:layout_below="@+id/txtMember"
+					android:layout_alignLeft="@+id/TextView14"></TextView>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:text="Address:" android:id="@+id/TextView02" android:layout_width="wrap_content" android:textSize="15dp" android:layout_height="wrap_content" android:layout_alignTop="@+id/txtAddress" android:layout_alignLeft="@+id/TextView01"></TextView>
+			</RelativeLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

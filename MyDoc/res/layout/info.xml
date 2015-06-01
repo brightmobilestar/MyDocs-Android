@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ctrl_ViewGroup"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="591dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/transparent" >
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="30dp"
+                android:layout_height="31dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:background="@drawable/nav_back" >
+            </Button>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="543dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/transparent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:layout_marginTop="38dp"
+                android:gravity="center"
+                android:text="All doctors agree, “Having and carrying your emergency medical history with you at all times; along with the medicines your are currently taking, can in an emergency save time and possibly your life.” For just .10 cents per month or $3 per year My Doc’s + is the most affordable insurance you can buy that can help assure you the best possible outcome in a medical emergency."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="150dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/button"
+                android:text="Sign Up Here"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/blinearAddtionalDisable"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/button_actionsheetCancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.64"
+            android:background="@drawable/transparent" />
+
+        <LinearLayout
+            android:id="@+id/rlActionSheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="0.10"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvActionSheetTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/actsheet_item_11"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="Download MyDoc's +"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/actsheet_item_12"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="Download Free MyDoc's App"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

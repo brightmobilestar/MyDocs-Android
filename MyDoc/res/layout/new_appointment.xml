@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<RelativeLayout android:layout_height="44dp"
+		android:layout_width="match_parent" android:background="@drawable/titlebar"
+		android:id="@+id/RelativeLayout01">
+		<Button android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true" android:layout_width="30dp"
+			android:layout_marginLeft="17dp" android:background="@drawable/nav_back"
+			android:id="@+id/btnBack" android:layout_height="31dp"></Button>
+		<TextView android:layout_alignParentRight="true"
+			android:layout_centerVertical="true" android:textSize="15dp"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content" android:id="@+id/txtDate_title"
+			android:layout_height="wrap_content" android:text="          "></TextView>
+		<TextView android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content" android:id="@+id/txtTitle"
+			android:layout_height="wrap_content" android:layout_centerVertical="true"
+			android:layout_centerHorizontal="true" android:text="Appointment"></TextView>
+	</RelativeLayout>
+	<ScrollView android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:id="@+id/scrollView1">
+		<LinearLayout android:id="@+id/apt_new_root_layout"
+			android:layout_width="match_parent" android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<RelativeLayout
+			    android:id="@+id/relativeLayout1"
+			    android:layout_width="match_parent"
+			    android:layout_height="1196dp"
+			    android:background="@drawable/background" >
+
+				<TextView android:textSize="15dp"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content" android:layout_marginLeft="23dp"
+					android:layout_marginTop="15dp" android:text="Appointment Date"
+					android:id="@+id/TextView01" android:layout_height="wrap_content"></TextView>
+				<EditText android:layout_width="wrap_content"
+					android:inputType="date" android:layout_alignRight="@+id/TextView01"
+					android:layout_toRightOf="@+id/medication9what" android:layout_below="@+id/TextView01"
+					android:id="@+id/txtDate" android:layout_height="35dp" android:textSize="14dp"></EditText>
+				<EditText android:layout_alignParentRight="true"
+					android:layout_width="wrap_content" android:inputType="time"
+					android:layout_toRightOf="@+id/textView1" android:id="@+id/txtTime"
+					android:layout_alignTop="@+id/txtDate" android:layout_height="35dp"
+					android:textSize="13dp" android:layout_alignBottom="@+id/txtDate"></EditText>
+				<TextView android:textSize="15dp"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content" android:layout_marginLeft="22dp"
+					android:layout_toRightOf="@+id/txtDate" android:text="Time :"
+					android:layout_alignTop="@+id/medication9what" android:id="@+id/textView1"
+					android:layout_height="wrap_content"></TextView>
+				<TextView android:textSize="15dp"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content" android:layout_below="@+id/txtDate"
+					android:text="Reminder :" android:id="@+id/TextView09"
+					android:layout_height="wrap_content" android:layout_alignLeft="@+id/medication9what"></TextView>
+				<TextView android:textSize="15dp"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content" android:layout_above="@+id/TextView07"
+					android:layout_toRightOf="@+id/txtDate" android:text="Yes"
+					android:id="@+id/TextView10" android:layout_height="wrap_content"></TextView>
+				<TextView android:textSize="15dp"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content" android:layout_toRightOf="@+id/chk_12pm"
+					android:text="12pm" android:layout_alignTop="@+id/chk_12pm"
+					android:id="@+id/TextView12" android:layout_height="wrap_content"></TextView>
+				<TextView android:textSize="15dp"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content" android:layout_below="@+id/TextView09"
+					android:text="Reminder three time choices :" android:id="@+id/TextView07"
+					android:layout_height="wrap_content" android:layout_alignLeft="@+id/TextView09"></TextView>
+				<TextView android:textSize="15dp"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content" android:layout_toRightOf="@+id/chk_8pm"
+					android:layout_below="@+id/txtTime" android:text="No" android:id="@+id/TextView06"
+					android:layout_height="wrap_content"></TextView>
+				<Button android:layout_width="wrap_content"
+					android:layout_below="@+id/txtTime" android:id="@+id/chk_Reminder_No"
+					android:layout_toLeftOf="@+id/TextView06" android:layout_height="wrap_content"
+					android:background="@drawable/checkbox_checked"></Button>
+				<TextView android:textSize="15dp"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content" android:text="8pm"
+					android:layout_alignTop="@+id/TextView12" android:id="@+id/medication1__name"
+					android:layout_height="wrap_content" android:layout_alignLeft="@+id/TextView06"></TextView>
+				<Button android:layout_width="wrap_content"
+					android:layout_alignRight="@+id/txtDate" android:background="@drawable/checkbox"
+					android:id="@+id/chk_Reminder_Yes" android:layout_alignTop="@+id/TextView10"
+					android:layout_height="wrap_content"></Button>
+				<Button android:layout_width="wrap_content"
+					android:background="@drawable/checkbox" android:layout_toRightOf="@+id/TextView07"
+					android:id="@+id/chk_8pm" android:layout_alignTop="@+id/medication1__name"
+					android:layout_height="wrap_content"></Button>
+				<EditText android:layout_alignParentRight="true"
+					android:layout_width="wrap_content" android:layout_toRightOf="@+id/medication8capsule"
+					android:layout_below="@+id/txtAddress" android:id="@+id/medication1capsule"
+					android:layout_height="35dp" android:textSize="13dp"></EditText>
+				<TextView android:textSize="15dp"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content" android:layout_below="@+id/TextView04"
+					android:layout_marginTop="15dp" android:text="Phone :" android:id="@+id/medication1dosage"
+					android:layout_height="wrap_content" android:layout_alignLeft="@+id/TextView04"></TextView>
+				<EditText android:layout_alignParentRight="true"
+					android:layout_width="wrap_content" android:layout_below="@+id/chk_12pm"
+					android:id="@+id/medication1what" android:layout_height="35dp"
+					android:layout_alignLeft="@+id/chk_Reminder_Yes" android:textSize="13dp"
+					android:layout_marginTop="40dp">
+					<requestFocus></requestFocus>
+				</EditText>
+				<TextView android:textSize="15dp"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content" android:layout_below="@+id/txtAddress"
+					android:text="City :" android:id="@+id/TextView18"
+					android:layout_height="wrap_content" android:layout_alignLeft="@+id/medication8capsule"></TextView>
+				<TextView android:textSize="15dp"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content" android:text="State :"
+					android:id="@+id/medication9name" android:layout_height="wrap_content"
+					android:layout_below="@+id/medication1capsule" android:layout_alignLeft="@+id/TextView18"></TextView>
+				<EditText android:layout_width="wrap_content" android:id="@+id/editMedicationCount"
+					android:layout_height="35dp" android:layout_below="@+id/medication1capsule"
+					android:layout_alignLeft="@+id/medication1capsule"
+					android:layout_alignParentRight="true" android:textSize="13dp"></EditText>
+				<EditText android:layout_width="wrap_content" android:id="@+id/editOtherAllergies"
+					android:layout_height="35dp" android:layout_alignTop="@+id/TextView04"
+					android:layout_alignParentRight="true" android:textSize="13dp"
+					android:layout_alignLeft="@+id/editMedicationCount">
+
+				</EditText>
+
+				<EditText
+				    android:id="@+id/editMedicineAllergies"
+				    android:layout_width="wrap_content"
+				    android:layout_height="35dp"
+				    android:layout_alignLeft="@+id/editOtherAllergies"
+				    android:layout_alignParentRight="true"
+				    android:layout_alignTop="@+id/medication1dosage"
+				    android:inputType="phone"
+				    android:textSize="13dp" >
+</EditText>
+				<EditText android:layout_width="wrap_content" android:id="@+id/editBirthday"
+					android:layout_height="35dp" android:layout_below="@+id/editMedicineAllergies"
+					android:layout_alignLeft="@+id/editMedicineAllergies"
+					android:visibility="gone"
+					android:layout_alignParentRight="true" android:textSize="13dp" android:hint="no spaces"></EditText>
+				<EditText android:layout_width="wrap_content" android:id="@+id/txtEmail"
+					android:layout_height="35dp" android:layout_below="@+id/editBirthday"
+					android:layout_alignParentRight="true" android:textSize="13dp"
+					android:layout_alignLeft="@+id/editBirthday"></EditText>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="Mobile :" android:layout_width="wrap_content"
+					android:textSize="15dp" android:id="@+id/medication8dosage"
+					android:layout_height="wrap_content" android:layout_alignTop="@+id/editBirthday"
+					android:visibility="gone"
+					android:layout_alignLeft="@+id/medication1dosage"></TextView>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="Email :" android:layout_width="wrap_content"
+					android:textSize="15dp" android:id="@+id/TextView15"
+					android:layout_height="wrap_content" android:layout_alignTop="@+id/txtEmail"
+					android:layout_alignLeft="@+id/medication8dosage"></TextView>
+				<Button android:text="Save" android:layout_width="100dp"
+					android:id="@+id/btnSave" android:textColor="@color/white"
+					android:layout_height="30dp" android:background="@drawable/button"
+					android:layout_below="@+id/txtEmail" android:layout_toLeftOf="@+id/medication1what"></Button>
+				<Button android:text="Home" android:layout_width="100dp"
+					android:id="@+id/btnHome" android:textColor="@color/white"
+					android:layout_height="30dp" android:background="@drawable/button"
+					android:layout_alignTop="@+id/btnSave" android:layout_alignLeft="@+id/TextView12"></Button>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="Date :" android:id="@+id/medication9what"
+					android:layout_width="wrap_content" android:textSize="15dp"
+					android:layout_height="wrap_content" android:layout_below="@+id/TextView01"
+					android:layout_alignLeft="@+id/TextView01"></TextView>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="Address :" android:id="@+id/medication8capsule"
+					android:layout_width="wrap_content" android:textSize="15dp"
+					android:layout_height="wrap_content" android:layout_alignTop="@+id/txtAddress"
+					android:layout_alignLeft="@+id/medication8what"></TextView>
+
+				<EditText
+				    android:id="@+id/txtAddress"
+				    android:layout_width="wrap_content"
+				    android:layout_height="35dp"
+				    android:layout_alignParentRight="true"
+				    android:layout_below="@+id/medication1what"
+				    android:layout_toRightOf="@+id/medication8capsule"
+				    android:height="15dp"
+				    android:textSize="13dp" >
+
+				</EditText>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="ZIP :" android:id="@+id/TextView04"
+					android:layout_width="wrap_content" android:textSize="15dp"
+					android:layout_height="wrap_content" android:layout_below="@+id/editMedicationCount"
+					android:layout_alignLeft="@+id/medication9name"></TextView>
+				<TextView android:textAppearance="?android:attr/textAppearanceLarge"
+					android:text="Doctor Information" android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/textView2"
+					android:layout_below="@+id/chk_12pm" android:textSize="15dp" android:layout_alignRight="@+id/TextView12"
+					android:layout_marginTop="10dp" android:layout_alignLeft="@+id/btnSave"></TextView>
+				<Button android:id="@+id/btnAdd" android:text="Add from list" android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="@drawable/button" android:height="30dp" android:layout_alignTop="@+id/textView2" android:layout_toRightOf="@+id/TextView10" android:layout_alignRight="@+id/medication1__name"></Button>
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:text="Name :" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="15dp" android:id="@+id/medication8what" android:layout_alignTop="@+id/medication1what" android:layout_toLeftOf="@+id/chk_8am"></TextView>
+				<Button android:id="@+id/chk_12pm" android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="@drawable/checkbox" android:layout_alignTop="@+id/medication9when" android:layout_toLeftOf="@+id/TextView10"></Button>
+				<Button android:id="@+id/chk_8am" android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="@drawable/checkbox" android:layout_alignTop="@+id/medication9when" android:layout_alignLeft="@+id/txtDate"></Button>
+				<TextView android:id="@+id/medication9when" android:textSize="15dp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="8am" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_below="@+id/TextView07" android:layout_toRightOf="@+id/chk_8am"></TextView>
+			</RelativeLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
